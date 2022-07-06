@@ -1,47 +1,39 @@
-.col {
-  padding: 0px;
-}
-
-.row > * {
-  padding: 0px !important;
-}
-
-/* .color-grid-item {
-  margin: 10px !important;
-} */
-
 .box-1 {
   height: 150px;
   background-color: blue;
   color: white;
-  border: 5px solid rgb(77, 74, 74);
 }
 
 .box-2 {
   height: 150px;
   background-color: yellow;
   color: black;
-  border: 5px solid rgb(77, 74, 74);
 }
 
 .box-3 {
   height: 150px;
   background-color: rgb(4, 197, 4);
   color: black;
-  border: 5px solid rgb(77, 74, 74);
 }
 
 .box-4 {
-  margin: 0px;
   height: 150px;
   background-color: red;
   color: black;
-  border: 5px solid rgb(77, 74, 74);
 }
 
 .box-5 {
   height: 150px;
   background-color: rgb(207, 99, 211);
   color: black;
+}
+
+.color-grid-item {
+  display: flex;
+  justify-items: center;
   border: 5px solid rgb(77, 74, 74);
+}
+
+.box-text {
+  margin: auto;
 }
