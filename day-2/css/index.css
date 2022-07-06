@@ -1,0 +1,171 @@
+.container {
+  width: 75%;
+  margin: auto;
+  border: 5px solid black;
+
+  /* padding: 16px; */
+
+  /* padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px; */
+
+  /* padding: 32px 0px 64px 50px; */
+  padding: 32px 16px;
+}
+
+.box-1 {
+  color: coral;
+}
+
+.box-2 {
+  color: grey;
+}
+
+body {
+  background-color: lightgray;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.6em;
+}
+
+a {
+  text-decoration: none;
+  /* color: green; */
+  color: rgb(8, 107, 49);
+}
+
+.categories {
+  padding: 16px;
+  border: 1px solid green;
+}
+
+.categories li {
+  list-style: none;
+  border-bottom: 1px solid blue;
+  /* text-align: center; */
+}
+
+.categories li:hover {
+  background-color: rgb(58, 122, 58);
+  color: white;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.myForm {
+  margin: 16px;
+  padding: 16px;
+}
+
+.myForm .form-group {
+  margin-bottom: 16px;
+}
+
+.myForm label {
+  display: block;
+}
+
+.myForm input[type="text"],
+.myForm input[type="email"],
+.myForm textarea {
+  width: 100%;
+  padding: 8px;
+}
+
+.button {
+  background-color: grey;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(170, 169, 169);
+  color: black;
+}
+
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  width: 30%;
+  margin: 16px auto;
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.card-header {
+  padding: 16px;
+  border-bottom: 1px solid black;
+  background-color: aquamarine;
+  color: white;
+}
+
+.card-content {
+  background-color: white;
+  padding: 32px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  column-gap: 5%;
+}
+
+.grid-item {
+  margin: 16px 0px;
+}
+
+.color-grid {
+  display: grid;
+  grid-template-columns: 34% 33% 33%;
+  border: 5px rgb(80, 80, 80) solid;
+}
+
+.color-grid-item {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  border: 5px rgb(80, 80, 80) solid;
+}
+
+.box-text {
+  margin: auto;
+}
+
+.box-1 {
+  background-color: blue;
+  color: white;
+}
+
+.box-2 {
+  background-color: yellow;
+  color: black;
+}
+
+.box-3 {
+  background-color: rgb(4, 197, 4);
+  color: black;
+}
+
+.box-4 {
+  background-color: red;
+  color: black;
+}
+
+.box-5 {
+  background-color: rgb(207, 99, 211);
+  color: black;
+
+  grid-column: 2 / span 2;
+}
