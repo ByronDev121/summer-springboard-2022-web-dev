@@ -1,0 +1,112 @@
+.page-container {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  background-color: #5496d0ff;
+  overflow-y: hidden;
+}
+
+.orange-strip {
+  position: relative;
+  height: 100%;
+  width: 1%;
+  background-color: orange;
+}
+
+.page-content {
+  height: 100%;
+  width: 64.5%;
+
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2em;
+  color: white;
+  overflow-y: scroll;
+}
+
+.page-content::-webkit-scrollbar {
+  width: 0;
+  height: 10px;
+  background-color: transparent;
+}
+.page-content::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  background-color: #dddddd;
+}
+
+.content-header-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.content-header {
+  padding: 32px;
+  margin: auto;
+}
+
+.page-content h1 {
+  font-weight: bolder;
+}
+
+.page-content p {
+  font-weight: 400;
+}
+
+.orange-line {
+  width: 10%;
+  margin-left: 25%;
+}
+
+.orange-line hr {
+  background-color: orange;
+  height: 4px;
+}
+
+.page-list {
+  margin-top: -30%;
+  padding: 16px;
+  text-align: left;
+  overflow: auto;
+}
+
+.page-list li {
+  padding: 16px;
+  list-style: none;
+}
+
+.page-list li a {
+  color: white;
+  text-decoration: none;
+}
+
+.page-list li a:hover {
+  color: orange;
+  font-size: larger;
+}
+
+.page-img {
+  width: 34.5%;
+  height: 100%;
+}
+
+.page-img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 990px) {
+  .page-content {
+    width: 99%;
+  }
+
+  .page-img {
+    width: 0%;
+    height: 100%;
+  }
+}
