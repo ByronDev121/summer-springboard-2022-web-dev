@@ -124,9 +124,11 @@ let textNode = document.createTextNode("My awesome element");
 newDiv.appendChild(textNode);
 
 const container = document.querySelector("header .container");
-const h1 = document.querySelector("header h1");
+// const h1 = document.querySelector("header h1");
 
-container.insertBefore(newDiv, h1);
+// container.insertBefore(newDiv, h1);
+
+container.appendChild(newDiv);
 
 console.log(container);
 

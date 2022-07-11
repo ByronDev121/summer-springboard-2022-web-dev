@@ -1,19 +1,28 @@
 // Variables
 
-// var firstName = "Byron";
+console.log("\n \n \n  Variables  \n \n \n");
 
-// const lastName = "de Villiers";
-// lastName = "Smith";
-// const lastName;
+// VAR - old
+var firstName1 = "Byron";
 
-// let age;
-// age = 42;
+// CONST - new - Immutable
+const lastName1 = "de Villiers";
+lastName = "Smith";
+// const lastName; // This will result in an error
 
-// console.log(firstName);
-// console.log(lastName);
-// console.log(age);
+// LET - new - Mutable
+let age1;
+age1 = 42;
 
-// Data types - primitives:
+console.log(firstName1);
+console.log(lastName);
+console.log(age);
+
+// Data types:
+
+console.log("\n \n \n  Data types  \n \n \n");
+
+// Primitives
 
 // String
 let firstName = "Byron";
@@ -26,6 +35,7 @@ let rating = 4.5;
 
 // Boolean
 let isCool = true;
+let isVeryCool = false;
 
 // null
 address = null;
@@ -34,20 +44,37 @@ address = null;
 let hairColor;
 
 // Not a primitive:
+
 // Object
+let person1 = {
+  firstNameKey: "firstNameValue",
+  lastNameKey: "lastNameValue",
+  ageKey: "ageValue",
+};
+
+// Array
+let arrayNumber1 = [1, 2, 3, "a", "b", "c"];
 
 // Concatenation:
 
+console.log("\n \n \n  Concatenation  \n \n \n");
+
+// String concatenation
 console.log("My name is " + firstName + " and I am " + age + " years old");
 
+// String interpolation
 console.log(`My name is ${firstName} and I am ${age} years old`);
 
 // Strings
 
+console.log("\n \n \n  Strings  \n \n \n");
+
 let s = `My name is ${firstName}`;
 
+// string properties
 console.log(s.length);
 
+// string methods
 console.log(s.toLocaleUpperCase());
 
 s = s.toLocaleUpperCase();
@@ -63,28 +90,45 @@ s2 = s[8];
 console.log(s1, s2);
 
 // Arrays:
+
+console.log("\n \n \n  Arrays  \n \n \n");
+
+// Initializing an array - old
 let nums1 = new Array(1, 2, 3, 4, 5, 6);
 console.log(nums1);
 
+// Initializing an array - new
 let alphaNumeric = [1, 2, 3, 4, 5, "a", "b"];
 console.log(alphaNumeric);
 
 let fruits = ["orange", "pear", "apple"];
 
-fruits.push("strawberries");
-fruits.unshift("grape");
+console.log(fruits);
 
-const lastFruit = fruits.pop();
-
-const index = fruits.indexOf("orange");
-
+// get element in array (remember it's zero indexed):
 console.log(fruits[2]);
+
+// array properties
+console.log(fruits.length);
+
+// array methods
+fruits.push("strawberries");
+console.log(fruits);
+fruits.unshift("grape");
+console.log(fruits);
+const lastFruit = fruits.pop();
+console.log(lastFruit, fruits);
+const index = fruits.indexOf("orange");
+console.log(index, fruits);
 
 // Objects
 
+console.log("\n \n \n  Arrays  \n \n \n");
+
 let person = {
-  firstName: "Byron",
-  lastName: "de Villiers",
+  // Object properties:
+  firstName: "John",
+  lastName: "Doe",
   age: 29,
   hobbies: ["golf", "surfing", "sport", "music"],
   address: {
@@ -92,14 +136,37 @@ let person = {
     city: "Potchefstroom",
     province: "North West",
   },
+  // Object methods:
+  getFullName: () => {
+    return this.firstName + " " + this.lastName;
+  },
+  getAddress: () => {
+    return (
+      this.address.street +
+      " " +
+      this.address.city +
+      " " +
+      this.address.province
+    );
+  },
 };
-
-person.email = "byron@mail.com";
-person["email"] = "byron@mail.com";
 
 console.log(person);
 
-// For:
+// Calling object methods
+console.log(person.getFullName());
+console.log(person.getAddress());
+
+// Adding properties:
+person.email = "byron@mail.com";
+person["email"] = "byron@mail.com";
+console.log(person);
+
+// Loops:
+
+console.log("\n \n \n  Loops  \n \n \n");
+
+// For loop example
 
 console.log("starting for loop");
 
@@ -111,7 +178,7 @@ for (let i = 0; i <= 10; i = i + 1) {
 
 console.log("for loop finished");
 
-// While
+// While loop example
 let i = 0;
 while (i <= 10) {
   console.log(i);
@@ -119,7 +186,9 @@ while (i <= 10) {
   i++;
 }
 
-console.log("\n \n \n");
+// Extra Example
+
+console.log("\n \n \n  Extra Example \n \n \n ");
 
 const todos = [
   {
@@ -159,8 +228,12 @@ todos.forEach((todo) => {
   console.log(`${todo.title} task is ${doneText} completed`);
 });
 
+// Conditional Statements:
+console.log("\n \n \n  Conditional Statements \n \n \n");
+
 const num = 10;
 
+// If statement:
 if (num == 10) {
   console.log("num = 10");
 } else if (num > 5) {
@@ -169,50 +242,99 @@ if (num == 10) {
   console.log("num < 5");
 }
 
-const lessThanFive = num < 5 ? true : false;
+// Switch statement:
+switch (num) {
+  case 10:
+    console.log("num = 10");
+  case 5:
+    console.log("num = 5");
+  default:
+    console.log("num not 5 or 10");
+}
 
+// ternary operator:
+const lessThanFive = num < 5 ? true : false;
 console.log(lessThanFive);
 
-console.log("\n \n \n Functions");
+// Functions
+console.log("\n \n \n Functions \n \n \n ");
 
+// function definition:
 function addTwoNumbers(num1, num2) {
   return num1 + num2;
 }
+
+// calling/executing the function
 const result = addTwoNumbers(5, 4);
+
+//logging result:
 console.log(result);
 
-const array1 = [10, 2, 5, 4, 8, 6];
+// Array Functions
 
-console.log(
-  array1.filter((x) => {
-    return x == 1;
-  })
-);
+console.log("\n \n \n Array Functions \n \n \n ");
 
-console.log(
-  array1.sort((a, b) => {
-    return a - b;
-  })
-);
+const array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
+const filteredArray = array1.filter((x) => {
+  return x % 2 == 0;
+});
+
+console.log(array1);
+console.log(filteredArray);
+
+const array2 = [10, 2, 5, 4, 8, 6];
+
+const sortedArray = array2.sort((a, b) => {
+  return a - b;
+});
+
+console.log(array2);
+console.log(sortedArray);
+
+// Function Example:
+
+console.log("\n \n \n Functions Example \n \n \n ");
+
+// Wite a function which logs today's Date with the console
+
+// function definition:
 function logDate() {
   console.log(new Date());
 }
 
+// call/executing the function:
 logDate();
 
+// Function Example:
+
+console.log("\n \n \n Functions Example \n \n \n ");
+
+// Wite a function which takes in a number as it's only parameter
+// and returns whether or not the number is a perfect square
+
+// Function definition
 function isPerfectSquare(x) {
   const sqrRoot = Math.sqrt(x);
   return sqrRoot * sqrRoot == x;
 }
 
-console.log(isPerfectSquare(7));
+// Calling/executing the function:
+const resPrfSqr = isPerfectSquare(16);
 
-console.log("\n \n \n Are TODOS Done: ");
+// Logging result:
+console.log(resPrfSqr);
 
-if (false) {
-  console.log("if executed");
-}
+// Extra Example:
+
+console.log("\n \n \n Functions Example \n \n \n ");
+
+// Wite a function which takes in an array of todo tasks as it's only parameter
+// and returns whether or not all tasks are completed
+
+console.log(
+  "\n \n \n Extra Example - Wite a function which takes in an array of todo tasks as a parameter and returns whether or not all tasks are complete \n \n \n"
+);
 
 function areTasksDone(todos) {
   for (let todo of todos) {
@@ -228,14 +350,18 @@ console.log(areTasksDone(todos));
 todos[1].completed = true;
 console.log(areTasksDone(todos));
 
+// Blog App Micro Internship Project:
+// Blog Post object data structure:
+
+console.log("\n \n \n Blog post objects \n \n \n");
+
 // ID,
 // title,
 // description,
 // author,
-//  date.Created and
-//  img URL (hopefully we'll have enough time to use firebase firestorage to save all the images for our web app).
-// You'll also notice that the blog post object defines a
-// content property which is an array of objects that defines each section.
+// date.Created and
+// img URL (hopefully we'll have enough time to use firebase firestorage to save all the images for our web app).
+// The blog post object must also defines a property which is an array of objects that defines each section.
 // Each section is defined by the Section Header, Section Text ( Section paragraph )
 
 const blogPosts = [
