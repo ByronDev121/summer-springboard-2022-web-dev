@@ -1,4 +1,4 @@
-./day-1/vuepress/node_modules
-./day-2/vuepress/node_modules
-./day-3/vuepress/node_modules
-./day-4/vuepress/node_modules
+./day-1/vuepress/src/
+./day-2/vuepress/src/
+./day-3/vuepress/src/
+./day-4/vuepress/src/
